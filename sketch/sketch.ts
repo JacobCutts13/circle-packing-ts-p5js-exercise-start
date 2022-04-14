@@ -4,7 +4,7 @@ function setup() {
 }
 
 function draw() {
-  const circlesArray = calculatePackedCircles(width, height);
+  const circlesArray = calculateTouchingCircles(width, height);
   for (const c of circlesArray) {
     drawCircle(c);
   }
